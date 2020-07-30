@@ -94,19 +94,28 @@
       );
       @include vendor('transition-delay', '0.25s');
       padding: 3rem 2rem;
-      max-height: 40rem;
+      max-height: 70rem;
       overflow: hidden;
+      float: left;
 
       > :last-child {
         margin-bottom: 0;
       }
     }
 
+    .image-avatar {
+      height: 300px;
+      width: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
     p {
       text-transform: uppercase;
       letter-spacing: _font(letter-spacing);
-      font-size: 0.8rem;
-      line-height: 2;
+      font-size: 1rem;
+      line-height: 4;
     }
   }
 

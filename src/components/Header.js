@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import random from '../images/random.png'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -8,13 +9,18 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <div className="image-avatar">
+          <img src={random} alt="" />
+        </div>
+      </div>
+      <div className="inner">
+        <h1>Michal Krawczykowski</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          BSc Computer Science graduate
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          MSc Advanced Computer Science student
+          <br />
+          Currently looking for a job in IT industry
         </p>
       </div>
     </div>
@@ -23,28 +29,28 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
               props.onOpenArticle('about')
             }}
           >
-            About
+            about
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('projects')
+            }}
+          >
+            projects
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('CV')
+            }}
+          >
+            CV
           </button>
         </li>
         <li>
