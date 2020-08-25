@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import random from '../images/random.png'
+import avatar from '../images/random.png'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -9,18 +9,18 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <div className="image-avatar">
-          <img src={random} alt="" />
+        <div className="image avatar">
+          <img src={avatar} alt="" />
         </div>
       </div>
       <div className="inner">
         <h1>Michal Krawczykowski</h1>
         <p>
-          BSc Computer Science graduate
-          <br />
           MSc Advanced Computer Science student
           <br />
-          Currently looking for a job in IT industry
+          BSc Computer Science graduate
+          <br />
+          Qualified IT Technician
         </p>
       </div>
     </div>
@@ -32,7 +32,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            about
+            About
           </button>
         </li>
         <li>
@@ -41,7 +41,7 @@ const Header = props => (
               props.onOpenArticle('projects')
             }}
           >
-            projects
+            Projects
           </button>
         </li>
         <li>
@@ -51,6 +51,15 @@ const Header = props => (
             }}
           >
             CV
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('qualifications')
+            }}
+          >
+            Qualifications
           </button>
         </li>
         <li>

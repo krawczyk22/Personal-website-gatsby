@@ -15,7 +15,7 @@
 		&:before {
 			@include vendor('pointer-events', 'none');
 			background-image: url('../../images/overlay.png');
-			background-color: _palette(bg-overlay);
+			//background-color: _palette(bg-overlay);
 			border-radius: _size(border-radius);
 			content: '';
 			display: block;
@@ -70,6 +70,41 @@
 
 			img {
 				width: 100%;
+			}
+		}
+
+		&.cv {
+			display: block;
+			margin-top: 0.625rem;
+			margin-bottom: 0.625rem;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.certificate {
+			display: block;
+			margin-top: 0.625rem;
+			margin-bottom: 0.625rem;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.avatar {
+			display: block;
+			margin: 0;
+			width: 20rem;
+
+			img {
+				width: 20rem;
+				position: relative;
+      			overflow: hidden;
+      			border-radius: 50%;
 			}
 		}
 

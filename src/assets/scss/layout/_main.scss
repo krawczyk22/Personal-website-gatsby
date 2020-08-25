@@ -86,6 +86,17 @@
 				}
 			}
 
+			.top-bar {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-auto-rows: 1fr; 
+			}
 		}
 
 		@include breakpoint(small) {
