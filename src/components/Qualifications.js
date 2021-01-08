@@ -1,5 +1,30 @@
 import React from 'react'
 import cv from '../images/CV/CV1.png'
+import PropTypes from 'prop-types'
+
+const downloadMSc = () => {
+  return window.open(
+    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+  )
+}
+
+const downloadBSc = () => {
+  return window.open(
+    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+  )
+}
+
+const downloadITTech = () => {
+  return window.open(
+    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+  )
+}
+
+const downloadITTechTrans = () => {
+  return window.open(
+    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+  )
+}
 
 const Qualifications = props => (
   <article
@@ -14,12 +39,20 @@ const Qualifications = props => (
       <div className="card">
         <div
           className="image certificate"
-          onClick={() => {
-            props.onOpenArticle('projects')
-          }}
-          onKeyDown={() => {
-            props.onOpenArticle('projects')
-          }}
+          onClick={downloadBSc}
+          onKeyDown={downloadBSc}
+          role="button"
+          tabIndex="0"
+        >
+          <img src={cv} alt="cv" />
+        </div>
+        <div className="description">MSc in Advanced Computer Science</div>
+      </div>
+      <div className="card">
+        <div
+          className="image certificate"
+          onClick={downloadMSc}
+          onKeyDown={downloadMSc}
           role="button"
           tabIndex="0"
         >
@@ -28,34 +61,28 @@ const Qualifications = props => (
         <div className="description">BSc in Computer Science</div>
       </div>
       <div className="card">
-        <div className="image certificate">
+        <div
+          className="image certificate"
+          onClick={downloadITTech}
+          onKeyDown={downloadITTech}
+          role="button"
+          tabIndex="0"
+        >
           <img src={cv} alt="cv" />
         </div>
         <div className="description">IT Technician diploma</div>
       </div>
       <div className="card">
-        <div className="image certificate">
+        <div
+          className="image certificate"
+          onClick={downloadITTechTrans}
+          onKeyDown={downloadITTechTrans}
+          role="button"
+          tabIndex="0"
+        >
           <img src={cv} alt="cv" />
         </div>
         <div className="description">IT Technician diploma translation</div>
-      </div>
-      <div className="card">
-        <div className="image certificate">
-          <img src={cv} alt="cv" />
-        </div>
-        <div className="description">Adobe Certified Associate Dreamweaver</div>
-      </div>
-      <div className="card">
-        <div className="image certificate">
-          <img src={cv} alt="cv" />
-        </div>
-        <div className="description">IT Essentials</div>
-      </div>
-      <div className="card">
-        <div className="image certificate">
-          <img src={cv} alt="cv" />
-        </div>
-        <div className="description">Google Analytics</div>
       </div>
     </div>
     <div
@@ -73,5 +100,10 @@ const Qualifications = props => (
     </div>
   </article>
 )
+
+Qualifications.propTypes = {
+  onOpenArticle: PropTypes.func,
+  onCloseArticle: PropTypes.func,
+}
 
 export default Qualifications
