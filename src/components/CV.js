@@ -1,9 +1,10 @@
 import React from 'react'
-import cv from '../images/cv.jpg'
+import cv1 from '../images/CV/CV1.png'
+import cv2 from '../images/CV/CV2.png'
 
 const downloadLink = () => {
   return window.open(
-    'https://drive.google.com/file/d/1-l1B90sxVAhbRTS3n9BBijAHdeyWf4ij/view?usp=sharing'
+    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
   )
 }
 
@@ -20,7 +21,8 @@ const CV = props => (
       <button onClick={downloadLink}>Download</button>
     </div>
     <span className="image cv">
-      <img src={cv} alt="cv" />
+      <img src={cv1} alt="cv1" />
+      <img src={cv2} alt="cv2" />
     </span>
     <div
       className="close"

@@ -1,5 +1,5 @@
 import React from 'react'
-import cv from '../images/cv.jpg'
+import cv from '../images/CV/CV1.png'
 
 const Qualifications = props => (
   <article
