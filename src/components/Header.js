@@ -16,11 +16,11 @@ const Header = props => (
       <div className="inner">
         <h1>Michal Krawczykowski</h1>
         <p>
+          Junior Full-Stack Developer
+          <br />
           MSc Advanced Computer Science student
           <br />
           BSc Computer Science graduate
-          <br />
-          Qualified IT Technician
         </p>
       </div>
     </div>
