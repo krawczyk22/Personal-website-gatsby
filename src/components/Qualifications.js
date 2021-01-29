@@ -1,5 +1,8 @@
 import React from 'react'
-import cv from '../images/CV/CV1.png'
+import MSc from '../images/Qualifications/BSc.png'
+import BSc from '../images/Qualifications/BSc.png'
+import ITTech from '../images/Qualifications/ITTech.png'
+import ITTechTrans from '../images/Qualifications/ITTechTrans.png'
 import PropTypes from 'prop-types'
 
 const downloadMSc = () => {
@@ -44,7 +47,7 @@ const Qualifications = props => (
           role="button"
           tabIndex="0"
         >
-          <img src={cv} alt="cv" />
+          <img src={MSc} alt="cv" />
         </div>
         <div className="description">MSc in Advanced Computer Science</div>
       </div>
@@ -56,7 +59,7 @@ const Qualifications = props => (
           role="button"
           tabIndex="0"
         >
-          <img src={cv} alt="cv" />
+          <img src={BSc} alt="cv" />
         </div>
         <div className="description">BSc in Computer Science</div>
       </div>
@@ -68,7 +71,7 @@ const Qualifications = props => (
           role="button"
           tabIndex="0"
         >
-          <img src={cv} alt="cv" />
+          <img src={ITTech} alt="cv" />
         </div>
         <div className="description">IT Technician diploma</div>
       </div>
@@ -80,7 +83,7 @@ const Qualifications = props => (
           role="button"
           tabIndex="0"
         >
-          <img src={cv} alt="cv" />
+          <img src={ITTechTrans} alt="cv" />
         </div>
         <div className="description">IT Technician diploma translation</div>
       </div>
