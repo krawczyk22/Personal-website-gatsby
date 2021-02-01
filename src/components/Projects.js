@@ -1,5 +1,4 @@
 import React from 'react'
-import pic02 from '../images/pic02.jpg'
 
 import FAQLogged from '../images/FAQ/Logged.png'
 import FAQNotLogged from '../images/FAQ/NotLogged.png'
@@ -13,6 +12,13 @@ import ABViewActivities from '../images/Activity-booking/ViewActivities.png'
 
 import FAaddStudent from '../images/Facial-attendance/addStudent.png'
 import FAverifyAttendance from '../images/Facial-attendance/verifyAttendance.png'
+
+import JSFavourites from '../images/Job-Swiper/Favourites.png'
+import JSJobSearchScreen from '../images/Job-Swiper/JobSearchScreen.png'
+import JSJobSwipe from '../images/Job-Swiper/JobSwipe.png'
+import JSLoginAuthScreen from '../images/Job-Swiper/LoginAuthScreen.png'
+import LoginScreen from '../images/Job-Swiper/LoginScreen.png'
+import WelcomePage from '../images/Job-Swiper/WelcomePage.png'
 
 const Projects = props => (
   <article
@@ -34,21 +40,31 @@ const Projects = props => (
         GitHub URL
       </a>
       &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://youtu.be/ptx-PKpxj4Q" target="_blank" rel="noreferrer">
+        Functionality Presentation
+      </a>
     </h4>
     <p>
       Job searching application with a Tinder-like swiping feature for selecting
       jobs previously specified by the user. Swiping left discards the job from
       the deck of cards whilst swiping right moved the job advertisement into a
       separate tab where the user can apply for it later. The user logs in
-      through a third-party app using the secure OAuth2 feature. Subsequently,
-      selecting the job title (or simply inserting the keywords) and entering
-      the job specifications into the appropriate field. The job advertisements
+      through a third-party app using the Firebase authorisation. Subsequently,
+      the user selects the job title (or simply inserts the keywords) and enters
+      the job specifications into the appropriate fields. The job advertisements
       are fetched from the Reed.co.uk API and are presented to the user in the
-      deck of cards form. Once the user selects appropriate job advertisements,
-      they can come back and apply for them later.
+      deck of cards form. The selected jobs are saved on Firebase and fetched
+      from there when the user requests to access them. Once the user selects
+      appropriate job advertisements, they can come back and apply for them
+      later.
     </p>
-    <span className="image main">
-      <img src={pic02} alt="" />
+    <span className="image grid">
+      <img src={WelcomePage} alt="" />
+      <img src={LoginScreen} alt="" />
+      <img src={JSLoginAuthScreen} alt="" />
+      <img src={JSJobSearchScreen} alt="" />
+      <img src={JSJobSwipe} alt="" />
+      <img src={JSFavourites} alt="" />
     </span>
 
     <h3>Activity booking system</h3>
@@ -71,13 +87,13 @@ const Projects = props => (
     </h4>
     <p>
       Activity booking system created in JavaScript split into the backend
-      framework in NodeJS and frontend framework in React. The application
+      framework in Node.js and frontend framework in React. The application
       benefits from signup and login pages, allows registered users to create
       activities, add other members and collaborate with them. Thus, the system
       aims to help with organising users' free time. The frontend framework
       fully connects to the backend environment through the utilisation of the
       RESTful APIs. The functionality of the project I was responsible for is
-      shown on the featuring video.{' '}
+      shown on the featuring video.
     </p>
     <span className="image main">
       <img src={ABAddActivity} alt="" />
@@ -124,7 +140,7 @@ const Projects = props => (
       </a>
     </h4>
     <p>
-      FAQ forum website created in JavaScript benefits from the NodeJS
+      FAQ forum website created in JavaScript benefits from the Node.js
       framework. The system provides a forum facility with the Frequently Asked
       Questions that each of the registered users can add and comment. The
       environment adds gamification by assigning points to the users who give

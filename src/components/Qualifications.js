@@ -1,31 +1,25 @@
 import React from 'react'
 import MSc from '../images/Qualifications/BSc.png'
-import BSc from '../images/Qualifications/BSc.png'
+//import BSc from '../images/Qualifications/BSc.png'
 import ITTech from '../images/Qualifications/ITTech.png'
 import ITTechTrans from '../images/Qualifications/ITTechTrans.png'
 import PropTypes from 'prop-types'
 
-const downloadMSc = () => {
-  return window.open(
-    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
-  )
-}
-
 const downloadBSc = () => {
   return window.open(
-    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+    'https://drive.google.com/file/d/1UhDeH4egumzNAgVH-P9BCPJKr4XtZWW9/view?usp=sharing'
   )
 }
 
 const downloadITTech = () => {
   return window.open(
-    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+    'https://drive.google.com/file/d/13tGlP8kj_xc0i6BKwBkqnS89o-f6bPQG/view?usp=sharing'
   )
 }
 
 const downloadITTechTrans = () => {
   return window.open(
-    'https://drive.google.com/file/d/1PlYP-ej6SkuKIV1t23k6MeRHc9h6QPRn/view?usp=sharing'
+    'https://drive.google.com/file/d/1t0rAwn0R4rylPme3G4eA2BxQRXj9ZYrS/view?usp=sharing'
   )
 }
 
@@ -48,18 +42,6 @@ const Qualifications = props => (
           tabIndex="0"
         >
           <img src={MSc} alt="cv" />
-        </div>
-        <div className="description">MSc in Advanced Computer Science</div>
-      </div>
-      <div className="card">
-        <div
-          className="image certificate"
-          onClick={downloadMSc}
-          onKeyDown={downloadMSc}
-          role="button"
-          tabIndex="0"
-        >
-          <img src={BSc} alt="cv" />
         </div>
         <div className="description">BSc in Computer Science</div>
       </div>

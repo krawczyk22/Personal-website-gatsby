@@ -14,7 +14,7 @@
 
   &:before {
     @include vendor('pointer-events', 'none');
-    background-image: url('../../images/overlay.png');
+    //background-image: url('../../images/overlay.png');
     //background-color: _palette(bg-overlay);
     border-radius: _size(border-radius);
     content: '';
@@ -70,6 +70,17 @@
 
     img {
       width: 100%;
+      padding-bottom: 10pt;
+    }
+  }
+
+  &.grid {
+    display: block;
+    margin: (_size(element-margin) * 1.25) 0;
+    width: 100%;
+
+    img {
+      width: 95%;
       padding-bottom: 10pt;
     }
   }
