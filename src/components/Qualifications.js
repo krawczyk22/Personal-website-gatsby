@@ -1,6 +1,6 @@
 import React from 'react'
-import MSc from '../images/Qualifications/BSc.png'
-//import BSc from '../images/Qualifications/BSc.png'
+//import MSc from '../images/Qualifications/BSc.png'
+import BSc from '../images/Qualifications/BSc.png'
 import ITTech from '../images/Qualifications/ITTech.png'
 import ITTechTrans from '../images/Qualifications/ITTechTrans.png'
 import PropTypes from 'prop-types'
@@ -40,7 +40,7 @@ const Qualifications = props => (
           onKeyDown={downloadBSc}
           aria-hidden="true"
         >
-          <img src={MSc} alt="cv" />
+          <img src={BSc} alt="cv" />
         </div>
         <div className="description">BSc in Computer Science</div>
       </div>

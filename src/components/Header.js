@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import avatar from '../images/avatar.png'
+import logo from '../images/logo-mini.png'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <div className="icon">
+        <img src={logo} alt="logo" className="mini" />
+      </div>
     </div>
     <div className="content">
       <div className="inner">
