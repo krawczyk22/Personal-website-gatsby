@@ -1,5 +1,4 @@
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
 
 const About = props => (
   <article
@@ -10,27 +9,23 @@ const About = props => (
     style={{ display: 'none' }}
   >
     <h2 className="major">about</h2>
-    <span className="image main">
-      <img src={pic01} alt="" />
-    </span>
     <p>
-      Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam
-      facilisis ante interdum congue. Integer mollis, nisl amet convallis,
-      porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi
-      nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my{' '}
-      <a href="#projects">awesome projects</a>.
+      Born in Poland. Since I was a kid, the only thing I've always been
+      passionate is technology. My interest pushed me to go to an IT school,
+      where I got my first qualifications as an IT Technician. Completing my
+      course left me keen on learning more. Therefore, I left my home country to
+      the United Kingdom and started my undergraduate degree at one of the best
+      Engineering Faculties in the country at Coventry University. This is where
+      I developed my programming skills and deepen my knowledge of current
+      technologies. Eager to learn more, I undertook a postgraduate course at
+      the University of Birmingham to broaden my knowledge further. This allowed
+      me to familiarise myself and understand new concepts of machine learning,
+      neural networks, computer vision and Artificial Intelligence
     </p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus
-      rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per
-      conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh
-      porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc
-      ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit
-      amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in
-      aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-      senectus et netus et malesuada fames ac turpis egestas. In non lorem sit
-      amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed
-      vehicula.
+      Currently, I'm focused on expanding my knowledge about JavaScript, React,
+      Node.js, React-Native, Firebase, web development. By working on personal
+      projects I'm hoping to develop products that will change the app market ;)
     </p>
     <div
       className="close"
