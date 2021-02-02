@@ -81,11 +81,8 @@ const Contact = props => (
       onKeyDown={() => {
         props.onCloseArticle()
       }}
-      role="button"
-      tabIndex="0"
-    >
-      Button
-    </div>
+      aria-hidden="true"
+    />
   </article>
 )
 export default Contact

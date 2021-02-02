@@ -38,8 +38,7 @@ const Qualifications = props => (
           className="image certificate"
           onClick={downloadBSc}
           onKeyDown={downloadBSc}
-          role="button"
-          tabIndex="0"
+          aria-hidden="true"
         >
           <img src={MSc} alt="cv" />
         </div>
@@ -50,8 +49,7 @@ const Qualifications = props => (
           className="image certificate"
           onClick={downloadITTech}
           onKeyDown={downloadITTech}
-          role="button"
-          tabIndex="0"
+          aria-hidden="true"
         >
           <img src={ITTech} alt="cv" />
         </div>
@@ -62,8 +60,7 @@ const Qualifications = props => (
           className="image certificate"
           onClick={downloadITTechTrans}
           onKeyDown={downloadITTechTrans}
-          role="button"
-          tabIndex="0"
+          aria-hidden="true"
         >
           <img src={ITTechTrans} alt="cv" />
         </div>
@@ -78,11 +75,8 @@ const Qualifications = props => (
       onKeyDown={() => {
         props.onCloseArticle()
       }}
-      role="button"
-      tabIndex="0"
-    >
-      Button
-    </div>
+      aria-hidden="true"
+    />
   </article>
 )
 
