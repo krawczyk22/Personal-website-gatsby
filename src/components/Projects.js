@@ -68,8 +68,8 @@ const Projects = props => (
       <iframe
         title="JobSwiper video"
         src="https://www.youtube.com/embed/ptx-PKpxj4Q"
-        width="555"
-        height="315"
+        //width="555"
+        //height="315"
         frameborder="0"
         allowfullscreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen"

@@ -199,8 +199,19 @@
     }
   }
 
+  @include breakpoint(large) {
+    .content {
+      .inner {
+        float: none;
+      }
+    }
+  }
+
   @include breakpoint(medium) {
     .content {
+      .inner {
+        float: none;
+      }
       p {
         br {
           display: none;
@@ -234,6 +245,7 @@
     .content {
       .inner {
         padding: 2.5rem 1rem;
+        float: none;
       }
 
       p {
@@ -248,6 +260,7 @@
     .content {
       .inner {
         padding: 2.5rem 0;
+        float: none;
       }
     }
 

@@ -18,13 +18,9 @@ const Header = props => (
       </div>
       <div className="inner">
         <h1>Michał Krawczykowski</h1>
-        <p>
-          Junior Full-Stack Developer
-          <br />
-          MSc Advanced Computer Science student
-          <br />
-          BSc Computer Science graduate
-        </p>
+        <p>Full-Stack Developer</p>
+        <p>MSc Advanced Computer Science student</p>
+        <p>BSc Computer Science graduate</p>
       </div>
     </div>
     <nav>
