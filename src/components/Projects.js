@@ -32,17 +32,15 @@ const Projects = props => (
 
     <h3>Job Swiper</h3>
     <h4>
+      See project on &nbsp;
       <a
         href="https://github.com/krawczyk22/JobSwipeApp"
         target="_blank"
         rel="noreferrer"
       >
-        GitHub URL
+        GitHub
       </a>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://youtu.be/ptx-PKpxj4Q" target="_blank" rel="noreferrer">
-        Functionality Presentation
-      </a>
     </h4>
     <p>
       Job searching application with a Tinder-like swiping feature for selecting
@@ -66,15 +64,30 @@ const Projects = props => (
       <img src={JSJobSwipe} alt="" />
       <img src={JSFavourites} alt="" />
     </span>
+    <span className="image main">
+      <iframe
+        title="JobSwiper video"
+        src="https://www.youtube.com/embed/ptx-PKpxj4Q"
+        width="555"
+        height="315"
+        frameborder="0"
+        allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen"
+      ></iframe>
+    </span>
 
     <h3>Activity booking system</h3>
     <h4>
+      See project on &nbsp;
       <a
         href="https://github.com/krawczyk22/Activity-booking-system"
         target="_blank"
         rel="noreferrer"
       >
-        GitHub URL
+        GitHub
       </a>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <a
@@ -104,12 +117,13 @@ const Projects = props => (
 
     <h3>Automated facial attendance system</h3>
     <h4>
+      See project on &nbsp;
       <a
         href="https://github.com/krawczyk22/Facial-attendance-system"
         target="_blank"
         rel="noreferrer"
       >
-        GitHub URL
+        GitHub
       </a>
     </h4>
     <p>
@@ -131,12 +145,13 @@ const Projects = props => (
 
     <h3>FAQ forum website</h3>
     <h4>
+      See project on &nbsp;
       <a
         href="https://github.com/krawczyk22/FAQ-forum-website"
         target="_blank"
         rel="noreferrer"
       >
-        GitHub URL
+        GitHub
       </a>
     </h4>
     <p>
